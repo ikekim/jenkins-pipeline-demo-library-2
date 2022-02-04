@@ -8,5 +8,7 @@ def getConfigFileProperties(configFile) {
     else {
         sh "echo No file ${configFile} exists && exit 1"
     }
-    sh "echo project is yaml_container_props['project_name']"
+    def prj_name = yaml_container_props['project_name']
+
+    sh 'echo project is $prj_name'
 }
