@@ -1,6 +1,6 @@
 
 def call(Map configfile) {
-    def buildOptions = 'vars.yml'
+    def buildOptions = 'vars.yaml'
     node {
         def tmpInfo = readYaml file: "${buildOptions}"
         propertyInfo << tmpInfo
