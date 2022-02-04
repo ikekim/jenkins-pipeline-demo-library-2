@@ -1,5 +1,5 @@
 
-def void generateTables(configfile)
+def generateTables(configfile)
     if (fileexists("${configfile}")) {
         yml_tables_properties = readYaml file: "${configfile}"
     }
