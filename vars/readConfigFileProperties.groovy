@@ -11,5 +11,5 @@ def getConfigFileProperties(configFile) {
     def prj_name = yaml_container_props['project_name']
 
     sh 'echo project is $prj_name'
-    println "project is ${configFile.project_name}"
+
 }
