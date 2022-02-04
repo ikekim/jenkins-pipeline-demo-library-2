@@ -6,6 +6,4 @@ def call(Map configfile)
         propertyInfo << tmpInfo
 
         println "print config ${propertyInfo.project_name}"
-
-    }
-}    
+    } 
